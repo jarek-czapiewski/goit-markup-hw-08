@@ -1,0 +1,43 @@
+.newsletter {
+  position: absolute;
+  margin-left: 600px;
+  margin-top: -12px;
+
+  &__portfolio {
+    position: absolute;
+    margin-left: 285px;
+    margin-top: -105px;
+  }
+
+  &__email {
+    width: 358px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 1.25;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px $box-shadow-color;
+    background: $background-gray-color;
+    outline: none;
+    color: $footer-light-color;
+
+    &::placeholder {
+      color: $footer-light-color;
+    }
+  }
+
+  &__icon {
+    fill: $white-color;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    margin-top: -40px;
+  }
+}
