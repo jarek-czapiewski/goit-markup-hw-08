@@ -3,6 +3,7 @@
   background-color: $light-color;
   text-align: center;
 
+
   &__list {
     list-style-type: none;
     display: flex;
@@ -32,4 +33,5 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
   }
+}
 }
