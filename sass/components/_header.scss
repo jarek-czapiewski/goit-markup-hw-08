@@ -32,4 +32,15 @@
     fill: currentColor;
   }
 }
+
+&__nav{
+  display: flex;
+justify-content: space-between;
+}
+
+.menu__icon{
+  padding: 10px 15px;
+ fill: $black-color;
+}
+
 }

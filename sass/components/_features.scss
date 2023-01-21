@@ -1,6 +1,4 @@
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
 
   &__title {
     font-weight: 700;
@@ -12,14 +10,19 @@
     text-align: center;
     margin-bottom: 10px;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__text {
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $main-gray-color;
-    margin-top: 10px;
+    margin-bottom: 30px;
+    display: block;
+    
   }
 
   &__list-item {
@@ -28,11 +31,11 @@
   }
 
   &__icon {
-    padding: 25px 100px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    border-radius: 4px;
+    margin: 55px;
+  
   }
+
+ 
 }

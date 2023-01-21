@@ -29,6 +29,11 @@
           <a class="logo" href="index.html"
             >Web<span class="logo__studio">Studio</span></a
           >
+          <button class="menu__item js-menu-open">
+            <svg width="24" height="16" class="menu__icon">
+              <use href="./images/icons.svg#icon-menu-icon"></use>
+            </svg>
+          </button>
           <!--navigation-->
           <nav class="header__navigation">
             <ul class="header__navigation-menu">
@@ -187,12 +192,21 @@
           <ul class="team__people">
             <li class="team__people-photos">
               <figure class="team__photos">
-                <img
-                  src="images/index/our-team-product-designer.jpg"
-                  alt="John_Doe1"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="images/desktop/product-designer-desktop.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="images/tablet/product-designer-tablet.jpg"
+                  />
+
+                  <img
+                    src="images/mobile/product-designer-mobile.jpg"
+                    alt="John_Doe1"
+                  />
+                </picture>
                 <figcaption class="team__description">
                   <h3 class="team__programmer-name">John Doe</h3>
                   <span class="team__programmers">Product Designer</span>
@@ -247,12 +261,22 @@
             </li>
             <li class="team__people-photos">
               <figure class="team__photos">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="images/desktop/frontend-developer-desktop.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="images/tablet/frontend-developer-tablet.jpg"
+                  />
+
                 <img
-                  src="images/index/our-team-frontend-developer.jpg"
+                  src="images/mobile/frontend-developer-mobile.jpg"
                   alt="John_Doe2"
-                  width="270"
-                  height="260"
                 />
+                </picture>
+
                 <figcaption class="team__description">
                   <h3 class="team__programmer-name">John Doe</h3>
                   <span class="team__programmers">Frontend Developer</span>
@@ -307,12 +331,18 @@
             </li>
             <li class="team__people-photos">
               <figure class="team__photos">
-                <img
-                  src="images/index/our-team-marketing.jpg"
-                  alt="John_Doe3"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="images/desktop/marketing-desktop.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="images/tablet/marketing-tablet.jpg"
+                  />
+
+                <img src="images/mobile/marketing-mobile.jpg" alt="John_Doe3" />
+                </picture>
                 <figcaption class="team__description">
                   <h3 class="team__programmer-name">John Doe</h3>
                   <span class="team__programmers">Marketing</span>
@@ -367,12 +397,20 @@
             </li>
             <li class="team__people-photos">
               <figure class="team__photos">
-                <img
-                  src="images/index/our-team-ui-designer.jpg"
-                  alt="John_Doe4"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="images/desktop/ui-designer-desktop.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="images/tablet/ui-designer-tablet.jpg"
+                  />
+                  <img
+                    src="images/mobile/ui-designer-mobile.jpg"
+                    alt="John_Doe4"
+                  />
+                </picture>
                 <figcaption class="team__description">
                   <h3 class="team__programmer-name">John Doe</h3>
                   <span class="team__programmers">UI Designer</span>
