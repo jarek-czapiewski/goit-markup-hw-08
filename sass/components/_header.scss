@@ -6,17 +6,21 @@
     padding: 16px 15px;
   }
 
-  &__navigation-menu > &__nav-item {
+  &__navigation-menu > &__nav-item{
     display: none;
   }
 
-  &__link-item {
+  &__link-item{
     list-style-type: none;
   }
+
+&__link-item > &__contacts-item{
+  display: none;
 }
 
-.contacts-icon {
-  visibility: hidden;
+
+&__contacts-icon {
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
@@ -27,4 +31,5 @@
     vertical-align: middle;
     fill: currentColor;
   }
+}
 }
