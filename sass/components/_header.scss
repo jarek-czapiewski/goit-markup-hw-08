@@ -2,21 +2,24 @@
   border-bottom: 1px solid $header-color;
 
   &__wrapper {
-    display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
+    padding: 16px 15px;
   }
 
-  
-    
-  
+  &__navigation-menu > &__nav-item {
+    display: none;
+  }
 
-  &__contacts-item {
- display: none;}
-    
+  &__link-item {
+    list-style-type: none;
+  }
+}
 
+.contacts-icon {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 1200px) {
   &__contacts-icon {
     width: 16px;
     height: 16px;
@@ -24,26 +27,4 @@
     vertical-align: middle;
     fill: currentColor;
   }
-
-  &__navigation-menu {
-    display: none;
-    gap: 46px;
-    list-style-type: none;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    line-height: 1.15;
-  }
-
-  &__nav-link {
-    text-decoration: none;
-  }
-
-  &__nav-link--active {
-    color: $brand-color;
-    position: relative;
-  }
-
-  
-
 }

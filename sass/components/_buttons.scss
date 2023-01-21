@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
-   padding: 6px 22px;
+    padding: 6px 22px;
   }
 
   &__list &__item {
@@ -28,60 +28,57 @@
     }
   }
 
-  &__newsletter{
+  &__newsletter {
     display: flex;
-  text-align: center;
-  align-items: center;
-  background: $brand-color;
-  width: 200px;
-  height: 50px;
-  padding: 10px 27px 10px 42px;
-  margin-left: 12px;
-  gap: 24px;
-  color: $white-color;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  line-height: 1.88;
-  box-shadow: 0px 4px 4px $box-shadow-color;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-&__modal-close{
-  width: 30px;
-  height: 30px;
-  color: $black-color;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  background: $white-color;
-}
-
-
-&__checkbox{
-  background: $brand-color;
-  width: 200px;
-  height: 50px;
-  box-shadow: 0px 4px 4px $box-shadow-color;
-  border-radius: 4px;
-  position: absolute;
-  left: 160px;
-  top: 500px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: $white-color;
-  cursor: pointer;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
+    text-align: center;
+    align-items: center;
+    background: $brand-color;
+    width: 200px;
+    height: 50px;
+    padding: 10px 27px 10px 42px;
+    margin-left: 12px;
+    gap: 24px;
+    color: $white-color;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    line-height: 1.88;
+    box-shadow: 0px 4px 4px $box-shadow-color;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  &__modal-close {
+    width: 30px;
+    height: 30px;
+    color: $black-color;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: $white-color;
+  }
+
+  &__checkbox {
+    background: $brand-color;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px $box-shadow-color;
+    border-radius: 4px;
+    position: absolute;
+    left: 160px;
+    top: 500px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $white-color;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
