@@ -1,22 +1,17 @@
 .newsletter {
-  position: absolute;
-  margin-left: 600px;
-  margin-top: -12px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
 
-  &__portfolio {
-    position: absolute;
-    margin-left: 285px;
-    margin-top: -105px;
-  }
 
   &__email {
-    width: 358px;
-    height: 50px;
+    width: calc(100vw - 30px);
+   max-width: 450px;
+  min-height: 50px;
     font-size: 16px;
     line-height: 1.25;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px $box-shadow-color;
@@ -36,8 +31,9 @@
   &__form {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding-top: 60px;
-    margin-top: -40px;
-  }
+   margin-top: 20px;
+    
+}
 }

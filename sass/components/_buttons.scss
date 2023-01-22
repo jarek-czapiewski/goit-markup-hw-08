@@ -33,10 +33,10 @@
     text-align: center;
     align-items: center;
     background: $brand-color;
-    width: 200px;
-    height: 50px;
     padding: 10px 27px 10px 42px;
+    max-height: 50px;
     margin-left: 12px;
+    margin-top: 20px;
     gap: 24px;
     color: $white-color;
     font-weight: 700;
@@ -49,8 +49,8 @@
   }
 
   &__modal-close {
-    width: 30px;
-    height: 30px;
+    max-width: 30px;
+    max-height: 30px;
     color: $black-color;
     position: absolute;
     top: 8px;

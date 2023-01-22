@@ -1,13 +1,19 @@
 .footer {
   background-color: $background-gray-color;
+  padding-top: 60px;
+  padding-bottom: 20px;
 
   &__wrapper{
-    padding-top: 60px;
-    padding-bottom: 60px;
     display: flex;
-    gap: 70px;
-   padding-left: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+&__logo{
+  display: flex;
+  justify-content: center;
+}
 
   &__links{
     list-style-type: none;
@@ -21,7 +27,8 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
         font-style: normal;
-        display: block;
+        display: flex;
+        justify-content: center;
         margin-bottom: 9px;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -43,6 +50,8 @@
 
 
 &__social-header{
+  display: flex;
+  justify-content:center ;
   color: $white-color;
   font-size: 14px;
   font-weight: 700;
@@ -53,11 +62,9 @@
   letter-spacing: 0.03em;
 }
 
-
-      &__social-links{
-        align-items: center;
-        margin-top: -12px;
-      }
+&__social-links{
+margin-top: 30px;
+}
 
       &__social-list{
         display: flex;
@@ -65,6 +72,7 @@
         gap: 10px;
         margin-top: 20px;
       }
+
 
       &__social-icon{
         border-radius: 50%;
@@ -75,5 +83,8 @@
            background-color: $brand-color;
         }
       }
+
+
+
 }
 

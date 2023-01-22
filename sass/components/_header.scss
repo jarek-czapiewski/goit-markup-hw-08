@@ -6,24 +6,67 @@
     padding: 16px 15px;
   }
 
-  &__navigation-menu > &__nav-item{
+  &__navigation-menu > &__nav-item {
     display: none;
   }
 
-  &__link-item{
+  &__link-item {
     list-style-type: none;
   }
 
-&__link-item > &__contacts-item{
-  display: none;
+  &__link-item > &__contacts-item {
+    display: none;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu__icon {
+    fill: $black-color;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu__icon:hover,
+  .menu__icon:focus {
+    fill: $brand-color;
+  }
+}
+@media (min-width: 768px) {
+  &__navigation-menu {
+    display: flex;
+    gap: 60px;
+    position: relative;
+    top: 20px;
+    right: 240px;
+    list-style-type: none;
+    font-weight: 500;
+    line-height: 1.15;
+  }
 }
 
-
-&__contacts-icon {
-  display: none;
+@media (min-width: 1200px) {
+  .menu__icon {
+    display: none;
+  }
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 768px) {
+  .menu__icon {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  &__navigation-menu > &__nav-item {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
   &__contacts-icon {
     width: 16px;
     height: 16px;
@@ -33,14 +76,32 @@
   }
 }
 
-&__nav{
-  display: flex;
-justify-content: space-between;
+@media (min-width: 768px) {
+  &__contacts-item > &__contacts-icon {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+    fill: currentColor;
+  }
 }
 
-.menu__icon{
-  padding: 10px 15px;
- fill: $black-color;
-}
-
+@media (min-width: 768px) {
+  &__link-item &__contacts-item {
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    line-height: 1.17;
+    margin-bottom: 10px;
+    color: $main-gray-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $brand-color;
+    }
+  }
 }

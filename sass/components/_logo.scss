@@ -13,4 +13,10 @@
       color: $white-color;
     }
   }
+
+  &__header{
+    display: flex;
+    justify-content: center;
+  }
+
 }
