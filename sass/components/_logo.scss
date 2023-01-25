@@ -14,9 +14,10 @@
     }
   }
 
-  &__header{
-    display: flex;
-    justify-content: center;
+  @media (min-width: 768px) {
+    &__header {
+      display: flex;
+      
   }
-
+}
 }

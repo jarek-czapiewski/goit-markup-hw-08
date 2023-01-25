@@ -1,6 +1,4 @@
 .features {
-
-
   &__title {
     font-weight: 700;
     font-size: 14px;
@@ -23,7 +21,6 @@
     color: $main-gray-color;
     margin-bottom: 30px;
     display: block;
-    
   }
 
   &__list-item {
@@ -36,8 +33,19 @@
     display: flex;
     justify-content: center;
     margin: 60px;
-  
   }
 
- 
-}
+  
+
+  @media (min-width: 768px) {
+       .features__list {
+         &__list-item{
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis: calc(100% - 30px);
+      max-width: 354px;
+    }
+  }
+       
+      }
+    }
