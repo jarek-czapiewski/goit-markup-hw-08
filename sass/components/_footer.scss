@@ -3,88 +3,82 @@
   padding-top: 60px;
   padding-bottom: 20px;
 
-  &__wrapper{
+  &__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-&__logo{
-  display: flex;
-  justify-content: center;
-}
+  &__logo {
+    display: flex;
+    justify-content: center;
+  }
 
-  &__links{
+  &__links {
     list-style-type: none;
     margin-top: 20px;
   }
 
-&__link-item{
-        text-decoration: none;
-        color: $white-color;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        font-style: normal;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 9px;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__link-item {
+    text-decoration: none;
+    color: $white-color;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-&:hover,
-&:focus{
-    color: $brand-color;
+    &:hover,
+    &:focus {
+      color: $brand-color;
+    }
+  }
+
+  &__email {
+    color: $footer-light-color;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &__contact {
+    color: $footer-light-color;
+  }
+
+  &__social-header {
+    display: flex;
+    justify-content: center;
+    color: $white-color;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+
+  &__social-links {
+    margin-top: 30px;
+  }
+
+  &__social-list {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  &__social-icon {
+    border-radius: 50%;
+    background-color: $footer-dark-color;
+    fill: $white-color;
+
+    &:hover {
+      background-color: $brand-color;
+    }
+  }
 }
-      }
-
-      &__email{
-        color: $footer-light-color;
-  text-decoration: underline;
-  cursor: pointer;
-      }
-
-      &__contact{
-        color: $footer-light-color;
-      }
-
-
-&__social-header{
-  display: flex;
-  justify-content:center ;
-  color: $white-color;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-}
-
-&__social-links{
-margin-top: 30px;
-}
-
-      &__social-list{
-        display: flex;
-        list-style-type: none;
-        gap: 10px;
-        margin-top: 20px;
-      }
-
-
-      &__social-icon{
-        border-radius: 50%;
-        background-color: $footer-dark-color;
-        fill: $white-color;
-
-        &:hover{
-           background-color: $brand-color;
-        }
-      }
-
-
-
-}
-
