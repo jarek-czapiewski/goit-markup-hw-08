@@ -1,7 +1,7 @@
 .footer {
   background-color: $background-gray-color;
   padding-top: 60px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 
   &__wrapper {
     display: flex;
@@ -51,12 +51,12 @@
   &__social-header {
     display: flex;
     justify-content: center;
+    align-items: center;
     color: $white-color;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 20px;
-    margin-bottom: 0px;
     line-height: 1.17;
     letter-spacing: 0.03em;
   }

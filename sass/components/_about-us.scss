@@ -1,3 +1,48 @@
 .about-us {
-display: none;
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .about-us {
+    display: flex;
+    background-color: $light-color;
+    text-align: center;
+    margin-top: -140px;
+    margin-bottom: -90px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us__list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us__image {
+    position: relative;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us__item {
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    top: 224px;
+    text-transform: uppercase;
+    color: $white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+  }
 }

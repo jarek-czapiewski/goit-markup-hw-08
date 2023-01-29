@@ -14,10 +14,10 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     &__header {
-      display: flex;
-      
+      position: absolute;
+      top: 28px;
+    }
   }
-}
 }

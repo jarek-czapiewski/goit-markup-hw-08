@@ -1,12 +1,13 @@
 .team {
-margin-top: 80px;
+  margin-top: 80px;
 
   &__people {
     list-style-type: none;
-    margin-left: -15px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
     font-weight: 500;
     font-size: 16px;
@@ -66,15 +67,31 @@ margin-top: 80px;
 
   &__people-photos {
     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    align-items: center;
+    flex-basis: 100%;
+    justify-content: center;
   }
 
-&__photos img{
-  display: block;
-  max-width: 100%;
-  height: auto;
+  &__photos img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 1200px) {
+    &__people {
+      &__people-photos {
+        display: flex;
+        flex-basis: calc(100% - 30px);
+        flex-wrap: wrap;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    &__people-photos {
+      max-width: 270px;
+      min-height: 428px;
+    }
+  }
 }
-
-}
-
-
-

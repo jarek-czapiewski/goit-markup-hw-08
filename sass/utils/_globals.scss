@@ -3,6 +3,16 @@ body {
   color: var(--main-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+figure {
+  padding: 0;
+}
+
 .container {
   max-width: 480px;
   margin: 0 auto;
