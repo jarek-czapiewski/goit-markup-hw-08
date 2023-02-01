@@ -73,9 +73,9 @@
     justify-content: center;
   }
 
-  &__photos img {
+  &__photos &__photos-item {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
 
@@ -86,12 +86,6 @@
         flex-basis: calc(100% - 30px);
         flex-wrap: wrap;
       }
-    }
-  }
-  @media (min-width: 1200px) {
-    &__people-photos {
-      max-width: 270px;
-      min-height: 428px;
     }
   }
 }
