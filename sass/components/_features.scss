@@ -35,15 +35,25 @@
     margin: 60px;
   }
 
+  @media (min-width: 768px) {
+    &__list {
+      &__list-item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 30px)) / 2;
+        max-width: 354px;
+      }
+    }
+  }
+
   @media (min-width: 1200px) {
-    @media (min-width: 768px) {
-      &__list {
-        &__list-item {
-          display: flex;
-          flex-wrap: wrap;
-          flex-basis: calc(100% - 30px);
-          max-width: 354px;
-        }
+    &__list {
+      &__list-item {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc(100% - 30px);
+        max-width: 270px;
       }
     }
   }
