@@ -17,6 +17,7 @@
     flex-basis: calc((100% - 30px) / 2);
     border: 1px solid $lightgray-color;
     padding: 16px 52px;
+    max-width: 210px;
     display: flex;
     height: auto;
     justify-content: center;
@@ -39,10 +40,10 @@
 
   @media (min-width: 768px) {
     &__item {
-      padding: 16px 60px;
+      max-width: 226px;
+      min-height: 92px;
     }
   }
-
   @media (min-width: 1200px) {
     &__item {
       padding: 16px 32px;

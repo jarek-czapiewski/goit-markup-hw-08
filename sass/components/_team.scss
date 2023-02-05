@@ -72,15 +72,19 @@
     justify-content: center;
   }
 
-  &__photos &__photos-item {
+  img {
     display: block;
     width: 100%;
     height: auto;
   }
 
   @media (min-width: 768px) {
+    margin-bottom: -35px;
+  }
+
+  @media (min-width: 768px) {
     &__people {
-      &__people-photos {
+      &-photos {
         display: flex;
         flex-basis: calc(100% - 30px) / 2;
         flex-wrap: wrap;
@@ -89,7 +93,7 @@
   }
   @media (min-width: 1200px) {
     &__people {
-      &__people-photos {
+      &-photos {
         display: flex;
         flex-basis: calc(100% - 30px) / 4;
         flex-wrap: wrap;

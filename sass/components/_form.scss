@@ -134,4 +134,13 @@
   &__agreement-link {
     color: $brand-color;
   }
+
+  @media (min-width: 1200px) {
+    &__checkbox-text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      margin-top: -2px;
+    }
+  }
 }

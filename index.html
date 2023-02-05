@@ -59,7 +59,7 @@
                 class="header__contacts-item header__contacts-item--header__contacts"
                 href="mailto:info@devstudio.com"
               >
-                <svg class="header__contacts-icon">
+                <svg class="header__contacts-icon header__contacts-email">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
@@ -70,7 +70,7 @@
                 class="header__contacts-item header__contacts-number"
                 href="tel:+48111111111"
               >
-                <svg class="header__contacts-icon">
+                <svg class="header__contacts-icon header__contacts-phone">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +48 111 111 111</a
@@ -197,7 +197,7 @@
           <ul class="team__people">
             <li class="team__people-photos">
               <figure class="team__photos">
-                <picture>
+                <picture class="team__photos-item">
                   <source
                     media=" screen and (max-width: 768px)"
                     srcset="
@@ -599,6 +599,8 @@
             </ul>
           </address>
         </div>
+      </div>
+      <div class="footer__social-media">
         <div class="footer__social-links">
           <p class="footer__social-header">Dołącz do nas</p>
           <ul class="footer__social-list">
@@ -656,6 +658,7 @@
             </li>
           </ul>
         </div>
+      </div>
         <div class="newsletter">
           <p class="footer__social-header">Zapisz się do newslettera</p>
           <form class="newsletter__form">
