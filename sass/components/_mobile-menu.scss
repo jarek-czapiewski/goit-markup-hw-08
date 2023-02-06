@@ -1,6 +1,9 @@
 .menu-container {
-  position: (0, 0, fixed);
-  size: (100vw, 100vh);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
   background-color: $white-color;
   padding: 48px 40px;
   transform: translateX(100%);
@@ -13,6 +16,7 @@
 .is-open {
   transform: translateX(0);
 }
+
 .js-close-menu {
   margin-top: -27px;
   margin-right: -14.67px;
@@ -35,7 +39,8 @@
       gap: 32px;
     }
   }
-  &__sm-list {
+
+  &__social-list {
     list-style-type: none;
     font-size: 18px;
     line-height: 1.22;
@@ -48,7 +53,7 @@
     justify-content: left;
     margin-top: 64px;
   }
-  &__sm-link {
+  &__social-link {
     color: $brand-color;
     display: inline-block;
     border-right: 1px solid rgba(33, 33, 33, 0.2);

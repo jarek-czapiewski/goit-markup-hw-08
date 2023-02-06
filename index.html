@@ -30,14 +30,18 @@
             <a class="logo logo__header" href="index.html"
               >Web<span class="logo__studio">Studio</span></a
             >
-            <button class="menu-toggle js-open-menu"
-              aria-expanded="false"
-              aria-controls="mobile-menu">
-              <svg width="24" height="16" class="menu__icon">
-                <use href="./images/icons.svg#icon-menu-icon"></use>
-              </svg>
-            </button>
-          </div>
+            <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="menu__icon" width="24" height="16" >
+              <use href="./images/icons.svg#icon-menu-mobile"
+            >
+          </use>
+            </svg>
+          </button>
           <!--navigation-->
           <nav class="header__navigation">
             <ul class="header__navigation-menu">
@@ -569,9 +573,7 @@
     </main>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg width="18.67px" height="18.67px">
-          <use href="images/icons.svg#closing-icon-1"></use>
-        </svg>
+      
       </button>
       <div class="mobile-menu">
         <ul class="mobile-menu__list mobile-menu__list--gap">
@@ -596,12 +598,12 @@
               >
             </li>
           </ul>
-          <ul class="mobile-menu__sm-list">
-            <li><a class="link__mobile mobile-menu__sm-link" href="#">Instagram</a></li>
-            <li><a class="link__mobile mobile-menu__sm-link" href="#">Twitter</a></li>
-            <li><a class="link__mobile mobile-menu__sm-link" href="#">Facebook</a></li>
+          <ul class="mobile-menu__social-list">
+            <li><a class="link__mobile mobile-menu__social-link" href="#">Instagram</a></li>
+            <li><a class="link__mobile mobile-menu__social-link" href="#">Twitter</a></li>
+            <li><a class="link__mobile mobile-menu__social-link" href="#">Facebook</a></li>
             <li>
-              <a class="link__mobile mobile-menu__sm-link mobile-menu__sm-link--not-bordered" href="#"
+              <a class="link__mobile mobile-menu__social-link mobile-menu__social-link--not-bordered" href="#"
                 >LinkedIn</a
               >
             </li>
