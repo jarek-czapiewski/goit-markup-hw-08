@@ -56,6 +56,9 @@
     &__navigation-menu {
       display: flex;
       gap: 60px;
+      position: relative;
+      left: 230px;
+      top: 34px;
       list-style-type: none;
       font-weight: 500;
       font-size: 14px;
@@ -68,10 +71,6 @@
       margin-right: 8px;
     }
 
-    &__contacts-number {
-      margin-right: 23px;
-    }
-
     &__contacts-email {
       width: 14px;
       height: 14px;
@@ -81,6 +80,11 @@
       width: 14px;
       height: 14px;
     }
+
+    &__contacts-number {
+      margin-right: 23px;
+    }
+
     &__nav-link {
       text-decoration: none;
       display: flex;
@@ -99,25 +103,26 @@
       position: absolute;
       top: 44px;
     }
-    .header {
-      &__contacts {
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-        vertical-align: middle;
-        gap: 10px;
-        list-style-type: none;
-        font-weight: 500;
-        font-size: 12px;
-        letter-spacing: 0.02em;
-        line-height: 1.17;
-      }
+
+    &__contacts {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      vertical-align: middle;
+      gap: 10px;
+      list-style-type: none;
+      font-weight: 500;
+      font-size: 12px;
+      letter-spacing: 0.02em;
+      line-height: 1.17;
     }
+
     &__link-item {
       right: 10px;
     }
-
-    @media (min-width: 1200px) {
+  }
+  @media (min-width: 1200px) {
+    .header {
       &__contacts-item {
         color: $main-gray-color;
         align-items: center;
@@ -131,15 +136,6 @@
       }
     }
 
-    @media (min-width: 1200px) {
-      .header {
-        &__contacts-icon {
-          width: 16px;
-          height: 16px;
-          margin-right: 10px;
-        }
-      }
-    }
     &__navigation-menu {
       display: flex;
       gap: 46px;
@@ -172,7 +168,6 @@
     }
     &__contacts {
       position: relative;
-      top: -10px;
       left: 10px;
       display: flex;
       justify-content: flex-end;
@@ -185,6 +180,7 @@
       letter-spacing: 0.02em;
       line-height: 1.15;
     }
+
     &__link-item {
       position: relative;
       right: 15px;
