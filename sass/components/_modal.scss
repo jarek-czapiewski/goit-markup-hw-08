@@ -36,6 +36,12 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media (min-width: 768px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+
 @media (min-width: 1200px) {
   .modal {
     max-width: 528px;

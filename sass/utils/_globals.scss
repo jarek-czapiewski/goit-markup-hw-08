@@ -23,14 +23,13 @@ figure {
   .container {
     max-width: 768px;
   }
-
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 1200px;
-    }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
   }
+}
 
-  .section {
-    padding: 94px 0;
-  }
+.section {
+  padding: 94px 0;
 }
