@@ -40,6 +40,11 @@
     }
   }
 
+  .menu-toggle {
+    display: flex;
+    background: none;
+  }
+
   &__social-list {
     list-style-type: none;
     font-size: 18px;
@@ -88,9 +93,5 @@
         color: $brand-color;
       }
     }
-  }
-
-  .mobile-close {
-    fill: black;
   }
 }
