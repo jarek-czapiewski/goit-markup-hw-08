@@ -40,16 +40,15 @@
       &__list {
         display: flex;
         flex-wrap: wrap;
-        margin-top: -90px;
-        margin-bottom: -210px;
+        gap: 30px;
         &-item {
           flex-basis: calc((100% - 30px)) / 2;
           max-width: 354px;
         }
       }
-      &__title {
-        justify-content: flex-start;
-      }
+    }
+    &__title {
+      justify-content: flex-start;
     }
     @media (min-width: 1200px) {
       .features {
