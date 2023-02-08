@@ -83,7 +83,6 @@
     }
   }
 }
-
 @media (min-width: 768px) {
   .footer {
     display: flex;
@@ -93,5 +92,19 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
+    &__wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__items {
+      margin-right: 84px;
+    }
+
+    &__social-media {
+      align-items: center;
+      justify-content: center;
+    }
   }
 }

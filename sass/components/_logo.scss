@@ -17,8 +17,14 @@
   @media (min-width: 768px) {
     &__header {
       position: absolute;
-      top: 50px;
-      display: flex;
+      top: 35px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &__header {
+      position: absolute;
+      top: 26px;
     }
   }
 }

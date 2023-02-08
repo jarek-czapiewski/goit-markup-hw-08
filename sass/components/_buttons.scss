@@ -51,13 +51,14 @@
   &__modal-close {
     max-width: 30px;
     max-height: 30px;
+    padding: 6px;
     color: $black-color;
     position: absolute;
     top: 8px;
     right: 8px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
     cursor: pointer;

@@ -3,8 +3,8 @@
 
   &__wrapper {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   &__navigation-menu {
@@ -58,7 +58,7 @@
       gap: 60px;
       position: relative;
       left: 230px;
-      top: 34px;
+      top: 25px;
       list-style-type: none;
       font-weight: 500;
       font-size: 14px;
@@ -135,16 +135,28 @@
         }
       }
     }
+
+    &__wrapper {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 210px;
+    }
+
     &__navigation-menu {
       display: flex;
+      justify-content: center;
+      align-items: center;
       gap: 46px;
       position: relative;
+      gap: 30px;
       left: 230px;
+      top: 0px;
       list-style-type: none;
       font-weight: 500;
       font-size: 14px;
       letter-spacing: 0.02em;
       line-height: 1.15;
+      max-width: 254px;
     }
     &__nav-link {
       text-decoration: none;
@@ -162,14 +174,18 @@
       height: 4px;
       background: $brand-color;
       position: absolute;
-      top: 46px;
+      top: 43px;
     }
     &__contacts {
-      position: relative;
-      left: 10px;
       display: flex;
-      vertical-align: middle;
+      flex-direction: row;
       gap: 30px;
+      position: fixed;
+      align-items: flex-end;
+      top: 30px;
+      left: 800px;
+      margin: auto;
+      vertical-align: middle;
       list-style-type: none;
       font-weight: 500;
       font-size: 14px;
@@ -177,6 +193,7 @@
       line-height: 1.15;
     }
     &__contacts-icon {
+      display: inline-block;
       width: 16px;
       height: 16px;
     }
