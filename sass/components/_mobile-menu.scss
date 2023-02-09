@@ -18,9 +18,15 @@
 }
 
 .js-close-menu {
-  margin-top: -27px;
   margin-right: -14.67px;
   padding: 0;
+  margin-top: -27px;
+  background: transparent;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: $brand-color;
+  }
 }
 .mobile-menu {
   height: 100%;
@@ -47,8 +53,8 @@
     letter-spacing: 0.02em;
     font-weight: 500;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: left;
     margin-top: 64px;
@@ -71,31 +77,27 @@
     display: block;
     margin-bottom: 32px;
   }
-  &__mail {
+
+  #mobile-menu__mail {
+    color: $main-gray-color;
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: $main-gray-color;
+    &:hover,
+    &:focus {
+      color: $brand-color;
+    }
   }
 
   .link__mobile {
     text-decoration: none;
-    color: $main-color;
     &--active {
+      color: $main-color;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       &:hover,
       &:focus {
         color: $brand-color;
       }
     }
-  }
-
-  .menu-toggle {
-    display: flex;
-    background: none;
-  }
-
-  .mobile-close {
-    background: none;
   }
 }

@@ -106,11 +106,10 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 2px;
-    position: absolute;
     width: 16px;
     height: 15px;
-    left: 40px;
     display: flex;
+    margin-right: 8px;
     justify-content: center;
     align-items: center;
   }
@@ -129,6 +128,8 @@
     color: $main-gray-color;
     letter-spacing: 0.03em;
     display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__agreement-link {

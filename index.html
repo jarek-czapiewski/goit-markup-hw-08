@@ -35,20 +35,20 @@
               aria-controls="mobile-menu"
             >
               <svg width="24" height="16">
-                <use href="./images/icons.svg#icon-menu-mobile"></use>
+                <use href="./images/icons.svg#icon-menu-icon"></use>
               </svg>
             </button>
           </div>
           <!--navigation-->
           <nav class="header__navigation">
             <ul class="header__navigation-menu">
-              <li class="header__nav-item">
+              <li>
                 <a class="header__nav-link header__nav-link--active">Agencja</a>
               </li>
-              <li class="header__nav-item">
+              <li>
                 <a class="header__nav-link" href="portfolio.html">Portfolio</a>
               </li>
-              <li class="header__nav-item">
+              <li>
                 <a class="header__nav-link" href="#">Kontakt</a>
               </li>
             </ul>
@@ -578,8 +578,8 @@
     </main>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg class="mobile-close" width="18.67" height="18.67">
-          <use href="./images/icons.svg#icon-menu-mobile-close"></use>
+        <svg class="icon-mobile-close" width="27" height="27">
+          <use href="./images/icons.svg#icon-icon-mobile-close"></use>
         </svg>
       </button>
       <div class="mobile-menu">
@@ -609,7 +609,8 @@
             </li>
             <li>
               <a
-                class="link__mobile link__mobile--active mobile-menu__mail"
+                class="link__mobile link__mobile--active"
+                id="mobile-menu__mail"
                 href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >

@@ -29,9 +29,7 @@
   }
 
   &__newsletter {
-    display: flex;
-    text-align: center;
-    align-items: center;
+    @extend %flexbox;
     background: $brand-color;
     padding: 10px 27px 10px 42px;
     max-height: 50px;
@@ -63,6 +61,9 @@
     justify-content: center;
     cursor: pointer;
     background: $white-color;
+    &:hover {
+      fill: $brand-color;
+    }
   }
 
   &__checkbox {

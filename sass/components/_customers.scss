@@ -3,11 +3,9 @@
   padding-top: 60px;
 
   &__list {
-    display: flex;
+    @extend %flexbox;
     flex-wrap: wrap;
     list-style-type: none;
-    align-items: center;
-    justify-content: center;
     gap: 30px;
     fill: $lightgray-color;
     cursor: pointer;
@@ -31,26 +29,29 @@
       border-radius: 4px;
     }
   }
-
-  @media (min-width: 768px) {
+}
+@media (min-width: 768px) {
+  .customers {
     &__list > &__item {
       flex-basis: calc((100% - 90px) / 3);
     }
-  }
 
-  @media (min-width: 768px) {
     &__item {
       max-width: 226px;
       min-height: 92px;
     }
   }
-  @media (min-width: 1200px) {
+}
+@media (min-width: 1200px) {
+  .customers {
+    &__list {
+      padding-bottom: 60px;
+    }
+
     &__item {
       padding: 16px 32px;
     }
-  }
 
-  @media (min-width: 1200px) {
     &__list > &__item {
       max-width: 170px;
       flex-wrap: nowrap;

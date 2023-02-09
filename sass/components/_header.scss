@@ -16,12 +16,9 @@
   }
 
   .menu-toggle {
-    display: flex;
+    @extend %flexbox;
     fill: $black-color;
     background: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
   }
 
