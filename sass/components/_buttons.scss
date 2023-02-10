@@ -5,6 +5,7 @@
     justify-content: center;
     margin-bottom: 40px;
     padding: 6px 22px;
+    gap: 8px;
   }
 
   &__list &__item {
@@ -54,9 +55,7 @@
     right: 8px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+    @extend %flexbox;
     cursor: pointer;
     background: $white-color;
     &:hover {

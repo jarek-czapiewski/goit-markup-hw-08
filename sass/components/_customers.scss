@@ -14,8 +14,10 @@
   &__item {
     flex-basis: calc((100% - 30px) / 2);
     border: 1px solid $lightgray-color;
-    padding: 16px 52px;
     max-width: 210px;
+    height: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
     display: flex;
     height: auto;
     justify-content: center;

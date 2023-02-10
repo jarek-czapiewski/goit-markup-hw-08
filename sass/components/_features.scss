@@ -24,6 +24,7 @@
   &__list-item {
     display: flex;
     flex-direction: column;
+    background: $light-color;
   }
 
   &__icon {

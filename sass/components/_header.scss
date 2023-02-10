@@ -59,6 +59,7 @@
       left: 230px;
       top: 25px;
       list-style-type: none;
+      color: $main-color;
       font-weight: 500;
       font-size: 14px;
       letter-spacing: 0.02em;
@@ -87,6 +88,7 @@
     &__nav-link {
       text-decoration: none;
       display: flex;
+      color: $main-color;
     }
     &__nav-link--active {
       color: $brand-color;
@@ -138,7 +140,6 @@
     &__wrapper {
       padding-top: 30px;
       padding-bottom: 30px;
-      padding-left: 210px;
     }
 
     &__navigation-menu {
@@ -157,6 +158,7 @@
       line-height: 1.15;
       max-width: 254px;
     }
+
     &__nav-link {
       text-decoration: none;
       display: flex;
