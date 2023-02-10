@@ -88,7 +88,7 @@
 
   &__checkbox {
     display: flex;
-    margin-left: 10px;
+    gap: 8px;
   }
 
   &__checkbox-input {
@@ -109,9 +109,6 @@
     width: 16px;
     height: 15px;
     display: flex;
-    margin-right: 8px;
-    justify-content: center;
-    align-items: center;
   }
 
   &__checkbox-icon {
@@ -119,7 +116,6 @@
   }
 
   &__checkbox-text {
-    margin-left: 2px;
     margin-bottom: 30px;
     font-size: 12px;
     font-weight: 400;
@@ -127,7 +123,6 @@
     letter-spacing: 0.03em;
     color: $main-gray-color;
     letter-spacing: 0.03em;
-    justify-content: center;
     display: inline-block;
   }
 

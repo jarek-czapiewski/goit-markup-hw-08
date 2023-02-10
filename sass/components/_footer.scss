@@ -87,6 +87,10 @@
       align-items: baseline;
     }
 
+    &__wrapper {
+      column-gap: 180px;
+    }
+
     &__social-media {
       align-items: center;
       justify-content: center;
