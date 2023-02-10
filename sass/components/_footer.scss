@@ -6,6 +6,7 @@
   &__wrapper {
     @extend %flexbox;
     flex-direction: column;
+    gap: 60px;
   }
 
   &__logo {
@@ -46,17 +47,12 @@
     color: $footer-light-color;
   }
 
-  &__social-links {
-    margin-top: 30px;
-  }
-
   &__social-header {
     @extend %flexbox;
     color: $white-color;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 20px;
     line-height: 1.17;
     letter-spacing: 0.03em;
   }
@@ -82,26 +78,41 @@
 @media (min-width: 768px) {
   .footer {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-    padding-right: 89px;
-    padding-left: 50px;
     flex-wrap: wrap;
 
     &__wrapper {
       flex-direction: row;
       flex-wrap: wrap;
-    }
-
-    &__items {
-      margin-right: 84px;
+      gap: 60px;
+      align-items: baseline;
     }
 
     &__social-media {
       align-items: center;
       justify-content: center;
       position: relative;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    &__social-header {
+      justify-content: flex-start;
+    }
+
+    &__logo {
+      justify-content: flex-start;
+    }
+
+    &__wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 70px;
+    }
+    &__link-item {
+      justify-content: flex-start;
     }
   }
 }

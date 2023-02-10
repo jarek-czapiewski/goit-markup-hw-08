@@ -1,14 +1,14 @@
 .newsletter {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
 
   &__email {
     width: calc(100vw - 30px);
     max-width: 450px;
+    min-height: 50px;
+    padding-left: 16px;
     font-size: 16px;
     line-height: 1.25;
-    padding: 15px 16px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px $box-shadow-color;
@@ -29,13 +29,24 @@
     @extend %flexbox;
     flex-direction: column;
     margin-top: 20px;
+    gap: 20px;
   }
+}
+@media (min-width: 768px) {
+  .newsletter {
+    display: flex;
+  }
+}
 
-  @media (min-width: 768px) {
-    .newsletter {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+@media (min-width: 1200px) {
+  .newsletter {
+    display: flex;
+    &__email {
+      width: calc(100vw - 30px);
+      max-width: 358px;
+    }
+    &__form {
+      flex-direction: row;
     }
   }
 }
