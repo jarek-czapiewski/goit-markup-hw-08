@@ -135,7 +135,10 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 1.71;
-      margin-top: -2px;
+    }
+
+    &__checkbox-item {
+      margin-top: 4px;
     }
   }
 }

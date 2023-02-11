@@ -24,13 +24,13 @@
   &__list-item {
     display: flex;
     flex-direction: column;
-    background: $light-color;
   }
 
   &__icon {
     display: flex;
     justify-content: center;
     margin: 55px;
+    background: $light-color;
   }
 }
 @media (min-width: 768px) {

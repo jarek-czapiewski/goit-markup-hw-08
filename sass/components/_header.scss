@@ -89,6 +89,10 @@
       text-decoration: none;
       display: flex;
       color: $main-color;
+      &:hover,
+      &:focus {
+        color: $brand-color;
+      }
     }
     &__nav-link--active {
       color: $brand-color;
@@ -122,18 +126,18 @@
       right: 10px;
     }
   }
-  @media (min-width: 1200px) {
-    .header {
-      &__contacts-item {
-        color: $main-gray-color;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover,
-        &:focus {
-          color: $brand-color;
-        }
+}
+@media (min-width: 1200px) {
+  .header {
+    &__contacts-item {
+      color: $main-gray-color;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: $brand-color;
       }
     }
 
