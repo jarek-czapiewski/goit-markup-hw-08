@@ -1,4 +1,5 @@
 .team {
+  background: $light-color;
   &__people {
     list-style-type: none;
     @extend %flexbox;
@@ -96,7 +97,6 @@
           padding-left: 32px;
           padding-right: 32px;
         }
-        background: $light-color;
         &__people {
           padding-bottom: 94px;
           &-photos {
