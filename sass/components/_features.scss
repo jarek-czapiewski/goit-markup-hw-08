@@ -29,8 +29,10 @@
   &__icon {
     display: flex;
     justify-content: center;
-    margin: 55px;
     background: $light-color;
+    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 @media (min-width: 768px) {
