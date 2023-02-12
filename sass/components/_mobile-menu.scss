@@ -60,11 +60,6 @@
     margin-top: 64px;
   }
 
-  @media (max-width: 472px) {
-    &__social-list {
-      font-size: 14px;
-    }
-  }
   &__social-link {
     color: $brand-color;
     display: inline-block;
